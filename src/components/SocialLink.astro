@@ -1,0 +1,14 @@
+---
+import type Social from '@lib/interfaces/Social';
+const socialData: Social = Astro.props.social;
+import SocialIcon from '@components/SocialIcon.astro';
+
+---
+ <a
+  href={socialData.link}
+        target="_blank"
+        class="mx-3"
+  title={socialData.title}
+>
+  <SocialIcon icon={socialData.icon}/>
+    </a>
