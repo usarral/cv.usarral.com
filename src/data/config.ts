@@ -7,7 +7,7 @@ export const SITE_TITLE = "Usarral | Software Developer";
 export const NAME = "Carlos";
 export const SUBTITLE = "Software Developer";
 export const SITE_DESCRIPTION =
-  "Astrofy is a free and open-source template for your Personal Portfolio Website built with Astro and TailwindCSS. Create in minutes a website with Blog, CV, Project Section, Store and RSS Feed.";
+  "Articles, resources y tutorials about Web Development, Backend, Typescript, Java ☕, DDD, Web Performance,...";
 export const PERSONAL_DESCRIPTION = `
   I'm a software developer based in Spain, with experience in web development. 
   I'm passionate about technology and I love to learn new things. I'm always looking for new challenges and opportunities to grow as a professional.
