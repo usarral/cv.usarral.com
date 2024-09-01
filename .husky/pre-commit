@@ -1,2 +1,2 @@
 pnpm run lint --fix
-pnpm run test -- --passWithNoTests
+

@@ -1,5 +1,5 @@
 export default interface menuItem {
-  Page: String,
-  Link: String,
-  id: String
+  Page: string,
+  Link: string,
+  id: string
 }
