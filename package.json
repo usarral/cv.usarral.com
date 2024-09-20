@@ -31,7 +31,7 @@
     "@tailwindcss/typography": "0.5.15",
     "@types/node": "22.5.5",
     "@typescript-eslint/parser": "8.5.0",
-    "eslint": "9.10.0",
+    "eslint": "9.11.0",
     "eslint-plugin-astro": "1.2.4",
     "globals": "15.9.0",
     "husky": "9.1.6",
