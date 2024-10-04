@@ -27,6 +27,11 @@ export const MENU_ITEMS: MenuItem[] = [
     id: "projects",
   },
   {
+    Page: "Blog",
+    Link: "/blog",
+    id: "blog",
+  },
+  {
     Page: "CV",
     Link: "/cv",
     id: "cv",
