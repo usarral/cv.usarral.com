@@ -7,6 +7,15 @@ draft: false
 topic: ai
 ---
 
+<!--toc:start-->
+
+- [The Conversation that Started It All](#the-conversation-that-started-it-all)
+- [Ethical Challenges in the World of AIs](#ethical-challenges-in-the-world-of-ais)
+- [The Ethical Dilemma of Censorship in Data Training](#the-ethical-dilemma-of-censorship-in-data-training)
+- [Actions We Can Take](#actions-we-can-take)
+- [My Personal Point of View](#my-personal-point-of-view)
+<!--toc:end-->
+
 Have you ever wondered how fake news and machine-generated texts affect the Artificial Intelligences (AIs) behind the technology we experience today? Recently, I had an interesting conversation with a coworker about this topic, and it honestly left me reflecting.
 
 ## The Conversation that Started It All

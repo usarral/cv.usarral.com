@@ -9,6 +9,18 @@ tags:
   - me
 ---
 
+<!--toc:start-->
+
+- [Introduction](#introduction)
+- [What is Aragon Skills 2023?](#what-is-aragon-skills-2023)
+- [How was the competition?](#how-was-the-competition)
+- [The First Day](#the-first-day)
+- [The Second Day](#the-second-day)
+- [The Final Day](#the-final-day)
+- [What Did I Take Away from the Competition?](#what-did-i-take-away-from-the-competition)
+- [Links](#links)
+<!--toc:end-->
+
 ## Introduction
 
 During March, between the 21st and 23rd, I had the opportunity to participate in the Aragon Skills 2023 competition, a three-day event where we competed with other students from the autonomous community of Aragon in various categories. In my case, the category was Web Development.

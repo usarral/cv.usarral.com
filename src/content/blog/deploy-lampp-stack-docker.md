@@ -1,6 +1,20 @@
 ---
+"title": "Deploying a LAMPP Stack in Docker"
+"description": "This article provides a step-by-step guide on deploying a LAMPP (Linux, Apache, MySQL, PHP, phpMyAdmin) stack using Docker. You'll learn how to set up an Ubuntu container, install Apache, configure MariaDB, and run PHP applications. Ideal for both beginners and those looking to enhance their container development skills."
+"pubDate": "2023-01-23"
+---
 
-# Deploying a LAMPP Stack in Docker
+<!--toc:start-->
+
+- [Description](#description)
+- [What is a LAMPP Stack?](#what-is-a-lampp-stack)
+- [Installing the LAMP Stack](#installing-the-lamp-stack)
+  - [Preparing the Container](#preparing-the-container)
+  - [Installing Apache](#installing-apache)
+  - [Installing MySQL](#installing-mysql)
+    - [Create a Connection User for phpMyAdmin](#create-a-connection-user-for-phpmyadmin)
+- [Installing PHP](#installing-php)
+<!--toc:end-->
 
 ## Description
 

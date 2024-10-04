@@ -10,6 +10,14 @@ tags:
   - python
 ---
 
+<!--toc:start-->
+
+- [What is Stable Diffusion?](#what-is-stable-diffusion)
+- [What is Google Colab?](#what-is-google-colab)
+- [What do I need to try Stable Diffusion 2.0?](#what-do-i-need-to-try-stable-diffusion-20)
+- [How to try Stable Diffusion 2.0?](#how-to-try-stable-diffusion-20)
+<!--toc:end-->
+
 This article is an update of the post [Try Stable Diffusion for Free using Google Colab | Usarral](https://usarral.medium.com/probar-stable-diffusion-gratis-usando-google-colab-usarral-8f8233ead7e1) that I wrote a while ago. In this article, I explain how to try Stable Diffusion 1.4 using Google Colab for free.
 
 ## What is Stable Diffusion?

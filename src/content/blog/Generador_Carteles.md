@@ -4,6 +4,17 @@ description: "Learn how to build an automatic poster generator for sports events
 pubDate: 2022-11-25
 ---
 
+<!--toc:start-->
+
+- [Introduction](#introduction)
+- [Objectives](#objectives)
+- [Usage Process](#usage-process)
+- [Technologies](#technologies)
+  - [Backend](#backend)
+  - [Frontend](#frontend)
+- [Conclusions](#conclusions)
+<!--toc:end-->
+
 ## Introduction
 
 During these past days, I have been working on a poster generator for the GDM La Merced club.
