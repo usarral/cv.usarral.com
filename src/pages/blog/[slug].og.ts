@@ -1,16 +1,24 @@
 import type { APIContext } from "astro";
-import { getEntry}from "astro:content";
+import { getCollection, getEntry}from "astro:content";
 import { readFileSync } from "node:fs";
 import { html } from "satori-html";
 import satori from "satori";
 import sharp from "sharp";
 import { SITE_TITLE_SHORT } from "@data/config";
+import createSlug from "@lib/createSlug";
 
 export async function GET({ params }: APIContext) {
   const { slug } = params;
   //Get the post using the slug from blog collection
-  const post = await getEntry("blog", slug);
-  const title = post?.data.title ?? SITE_TITLE_SHORT;
+  if (!slug) {
+    return new Response("Slug not provided", { status: 400 });
+  }
+  const postEntries = await getCollection("blog");
+const entry = postEntries.find(
+  (entry) => createSlug(entry.data.title, entry.slug) === slug
+);
+
+  const title = entry?.data.title ?? SITE_TITLE_SHORT;
 
   const fontFilePath = `${process.cwd()}/public/fonts/inter.ttf`;
   const fontFile = readFileSync(fontFilePath);
@@ -29,7 +37,7 @@ export async function GET({ params }: APIContext) {
     height: 630,
     fonts: [
       {
-        name: "Optimistic Display",
+        name: "Inter",
         data: fontFile,
         style: "normal",
       },
