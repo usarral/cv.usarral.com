@@ -2,15 +2,26 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HorizontalCard from "../../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
-import createSlug from "../../lib/createSlug"
+import createSlug from "../../lib/createSlug";
 
-export async function getStaticPaths({ paginate }) {
-  const posts = await getCollection("blog");
-  posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-  return paginate(posts, { pageSize: 10 });
-}
+// Obtén los datos directamente en el servidor
+const posts = await getCollection("blog");
+posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
-const { page } = Astro.props;
+// Simula la paginación (ajusta según tus necesidades)
+const pageSize = 10;
+const currentPage = Number(Astro.url.searchParams.get("page")) || 1;
+const start = (currentPage - 1) * pageSize;
+const end = start + pageSize;
+const pageData = posts.slice(start, end);
+
+const page = {
+  data: pageData,
+  url: {
+    previous: currentPage > 1 ? `?page=${currentPage - 1}` : null,
+    next: end < posts.length ? `?page=${currentPage + 1}` : null,
+  },
+};
 ---
 
 <BaseLayout title="Blog" sideBarActiveItemID="blog">
@@ -46,8 +57,8 @@ const { page } = Astro.props;
 
   <div class="flex justify-between">
     {
-      page.url.prev ? (
-        <a href={page.url.prev} class="btn btn-ghost my-10 mx-5">
+      page.url.previous ? (
+        <a href={page.url.previous} class="btn btn-ghost my-10 mx-5">
           {" "}
           <svg
             class="h-6 w-6 fill-current md:h-8 md:w-8"
