@@ -2,6 +2,7 @@ import type MenuItem from "@lib/interfaces/MenuItem";
 import type Project from "@lib/interfaces/Project";
 
 export const SITE_TITLE = "Usarral | Software Developer";
+export const SITE_URL = "https://usarral.com";
 export const NAME = "Carlos";
 export const SUBTITLE = "Software Developer";
 export const SITE_DESCRIPTION =
