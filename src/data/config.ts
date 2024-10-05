@@ -4,6 +4,7 @@ import type Project from "@lib/interfaces/Project";
 export const SITE_TITLE = "Usarral | Software Developer";
 export const SITE_URL = "https://usarral.com";
 export const NAME = "Carlos";
+export const TWITTER_AUTHOR = "@usarral_";
 export const SUBTITLE = "Software Developer";
 export const SITE_DESCRIPTION =
   "Articles, resources y tutorials about Web Development, Backend, Typescript, Java ☕, DDD, Web Performance,...";
@@ -116,6 +117,11 @@ export const SOCIALS = [
     link: "mailto:cv@usarral.com",
     icon: "mail",
   },
+  {
+    title: "RSS",
+    link: "/rss.xml",
+    icon: "rss",
+  }
 ];
 export const WORK_EXPERIENCE = [
   {

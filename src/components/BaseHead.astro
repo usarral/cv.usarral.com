@@ -11,7 +11,7 @@ export interface Props {
 }
 
 const { title, description, image = '', ogType = 'website' } = Astro.props;
-import { SITE_TITLE } from '../data/config';
+import { SITE_TITLE, TWITTER_AUTHOR } from '../data/config';
 ---
 
 <!-- Global Metadata -->
@@ -32,6 +32,7 @@ import { SITE_TITLE } from '../data/config';
 <meta property="og:description" content={description} />
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:author" content={TWITTER_AUTHOR} />
 <meta property="twitter:url" content={Astro.url} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
